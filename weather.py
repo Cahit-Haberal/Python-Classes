@@ -48,7 +48,7 @@ class Weather(QWidget):
         self.submit.clicked.connect(self.submit_button)
         
     def submit_button(self):
-        api_key = "5e04289fc3a5e899058ce07b7b2b8cd0"
+        api_key = ""
         token = self.entry.text()
         url = f"https://api.openweathermap.org/data/2.5/weather?q={token}&appid={api_key}"
          
